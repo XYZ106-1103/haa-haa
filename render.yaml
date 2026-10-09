@@ -1,0 +1,14 @@
+# Render Blueprint — 저장소 루트에 두고 Render 대시보드에서 "New > Blueprint"로 연결하세요.
+services:
+  - type: web
+    name: last-island
+    runtime: node
+    plan: free
+    region: singapore
+    buildCommand: npm install
+    startCommand: node server.js
+    healthCheckPath: /healthz
+    autoDeploy: true
+    envVars:
+      - key: NODE_VERSION
+        value: "20"

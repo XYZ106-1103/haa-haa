@@ -1,0 +1,17 @@
+{
+  "name": "last-island-multiplayer",
+  "version": "1.0.0",
+  "description": "최후의 섬 — 최대 4인 멀티플레이 배틀로얄 (봇 포함 100명)",
+  "main": "server.js",
+  "private": true,
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node --watch server.js"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "dependencies": {
+    "ws": "^8.18.0"
+  }
+}
